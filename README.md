@@ -2,4 +2,4 @@
 
 - 🖥️ Trabalho com Front-end
 - 🎓 Estudante de TypeScript
-- 🙏 100% Focado no Caminho ✨
+- 🙏 100% Focado no Meu Caminho ✨
