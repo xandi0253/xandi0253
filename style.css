@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body
+{
+    height: 100vh;
+    background-color: #BC002D;
+    color: #dfe4e2;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.informacoes
+{
+    display: flex;
+    background-color: #130f0c;
+    color: #dfe4e2;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.informacoes_links
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 40px 40px;
+}
+
+.informacoes_links_links
+{
+    color: #dfe4e2;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+}
+
+.cabecalho
+{
+   
+    background-color: #130f0c;
+   
+}
+.abas
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    font-size: 30px;
+    padding: 10px 30px;
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    font-size: 50px;
+    font-family: "Protest Revolution", serif;
+}
+
+.foto_equipe
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0px;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sobre Nos */
+
+.sobre1
+{   text-align: left;
+    display: flex;
+}
+
+.senseis
+{
+    display: flex;
+    gap: 50px;
+    margin: 0% 10%;
+    
+}
+
+.texto_esquerda
+{
+    text-align: left;
+}
+
+.texto_direita
+{
+    text-align: right;
+}
+
+/* Seja Aluno */
+.seja_aluno 
+h1{
+
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 2em;
+  padding: 0;
+
+}
+
+.texto_direita
+{
+    text-align: left;
+    text-align: left;
+}
+
+.texto_esquerda
+{
+    text-align: right;
+    text-align: left;
+}
+
+.aluno_kendo
+{
+    display: flex;
+    flex-direction: center;
+    font-size: 1em;
+    font-family: 'Segoe UI',sans-serif;
+    text-align: center;
+    padding: 0em ;
+    gap: 2em ;
+    margin: 5% 30%;
+
+}
+
+
+
+
