@@ -16,12 +16,13 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
 
 ![xandi0253GitHub stats](https://github-readme-stats.vercel.app/api?username=alexandreli&show_icons=true&theme=radical)
 
-## Tecnlogias que uso no dia
+## 🤖Tecnlogias que uso no dia
 
 <div style="display; auto"><br/><img align="center" alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/></div>
 <div style="display; auto"><br/><img align="center" alt="css" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
 <div style="display; auto"><br/><img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></div><br>
 
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xandi0253&layout=compact)<br>
 
-Apaixonado por tecnologia, educação é por mudar a vida das pessoas através da progromação.
+🤩Apaixonado por tecnologia, educação é por mudar a vida das pessoas através da progromação.❤
