@@ -29,20 +29,20 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
 
 <img
     align="left"
-    alt="HTML"
-    title="HTML"
+    alt="CSS"
+    title="CSS"
     width="30px"
     style="padding-right; 10px"
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
 
 <img
     align="left"
-    alt="HTML"
-    title="HTML"
+    alt="JAVASCRIPT"
+    title="JAVASCRIPT"
     width="30px"
     style="padding-right; 10px"
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /><br><br>
-
+### 📊Estásticas
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xandi0253&layout=compact)<br>
 
 🤩Apaixonado por tecnologia, educação é por mudar a vida das pessoas através da progromação.
