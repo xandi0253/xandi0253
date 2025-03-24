@@ -13,8 +13,6 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
 ![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 ![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)
 
-
-![xandi0253GitHub stats](https://github-readme-stats.vercel.app/api?username=alexandreli&show_icons=true&theme=radical)
 ---
 
 ### 🤖Linguagens e Tecnologias
@@ -43,6 +41,19 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
     style="padding-right; 10px"
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /><br><br>
 ### 📊Estásticas
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xandi0253&layout=compact)<br>
+
+<p>
+<img
+    align="left"
+    alt="GitHub Stats"
+    hriht="200px"
+    style="padding-right; 10px"
+    src="https://github-readme-stats.vercel.app/api?username=alexandrelima&show_icons=true&theme=radical"/>
+    <img
+    align="left"
+    alt="GitHub Stats"
+    height="200px"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=xandi0253&themeshow_icons=true&theme=radical&layout=compact&custom_title-tecnologias&langs_count7"/></p>
+
 
 🤩Apaixonado por tecnologia, educação é por mudar a vida das pessoas através da progromação.
