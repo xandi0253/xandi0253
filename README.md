@@ -1,7 +1,7 @@
 # 👩🏻‍💻 Alexandre Lima
 
 🖥️ Trabalho com Front-end
-- 🎓 Estudante de Desenvlovimendo de Sistema
+- 🎓 Estudante de Desenvlovimendo de Sistemas
 - 🙏 100% Focado no Meu Caminho ✨
 
 **`Desenvolvedor Front-end`**
