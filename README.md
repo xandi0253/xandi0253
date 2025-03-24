@@ -19,13 +19,29 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
 
 ### 🤖Linguagens e Tecnologias
 
-        
+ <img
+    align="left"
+    alt="HTML"
+    title="HTML"
+    width="30px"
+    style="padding-right; 10px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                    
-<div style="display; auto"><br/><img align="center" alt="css" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
-<div style="display; auto"><br/><img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></div><br>
+<img
+    align="left"
+    alt="HTML"
+    title="HTML"
+    width="30px"
+    style="padding-right; 10px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
 
+<img
+    align="left"
+    alt="HTML"
+    title="HTML"
+    width="30px"
+    style="padding-right; 10px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /><br><br>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xandi0253&layout=compact)<br>
 
