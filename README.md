@@ -49,11 +49,9 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
     hriht="200px"
     style="padding-right; 10px"
     src="https://github-readme-stats.vercel.app/api?username=alexandrelima&show_icons=true&theme=radical"/>
-    <img
+ <img
     align="left"
     alt="GitHub Stats"
     height="200px"
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=xandi0253&themeshow_icons=true&theme=radical&layout=compact&custom_title-tecnologias&langs_count7"/></p><br><br>
-
----
 🤩Apaixonado por tecnologia, educação é por mudar a vida das pessoas através da progromação.
