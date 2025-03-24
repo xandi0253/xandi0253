@@ -15,6 +15,7 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
 
 
 ![xandi0253GitHub stats](https://github-readme-stats.vercel.app/api?username=alexandreli&show_icons=true&theme=radical)
+---
 
 ## 🤖Linguagens e Tecnologias
 
