@@ -19,8 +19,10 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
 
 ### 🤖Linguagens e Tecnologias
 
-            <i class="devicon-html5-plain colored"></i>
-          
+        
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                    
 <div style="display; auto"><br/><img align="center" alt="css" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
 <div style="display; auto"><br/><img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></div><br>
 
