@@ -46,7 +46,7 @@ Me chamo Alexandre Lima, sou natural de Minas Gerais. Concluí o ensino médio, 
 <img
     align="left"
     alt="GitHub Stats"
-    hriht="200px"
+    height="200px"
     style="padding-right; 10px"
     src="https://github-readme-stats.vercel.app/api?username=xandi0253&show_icons=true&theme=radical&locale=pt-br"/>
  <img
