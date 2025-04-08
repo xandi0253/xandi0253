@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defiência Audio Visual</title>
+    <link rel="stylesheet" href="Css/style.css">
+
+    <!--link do bootstrap rede sociais-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+<header>
+    <h1>ACESSIBILIDADE</h1>
+    <img src="Imagem/Logo -2.jpg" alt="imagem para deficiência visual" height="200">
+</header>
+
+<body>
+
+    <h2 id="titulo">Bem-vindo!</h2>
+    <p id="mensagem">Sua página está sendo atualizada, para uma pessoa com deficiência visual.</p>
+
+   <div class="botao">
+    <button onclick="lerMensagem()" aria-label="Ouvir  mensagem de boa-vindas">Ouvir mensagem</button></div>
+
+    <script>
+        function lerMensagem() {
+            const texto = document.getElementById("mensagem").textContent;
+
+            const fala = new SpeechSynthesisUtterance(texto);
+
+            fala.lang = "pt-BR";
+
+            speechSynthesis.speak(fala);
+        }
+    </script>
+
+
+<footer>
+    <div class="interface">
+        <section class="line-footer1">
+        <h4>Acessibilidade, audio-visual</h4>
+        <p>Inscreva-se em newslattler e receba as principais notícias sobre nosso conteúdo, diretamente em seu e-mail:</p>
+        <form action="">
+            <input type="email" name="" id="">
+            <input type="submit" value="Cadastrar">
+        </form>
+    
+        </section>
+
+        <section class="line-footer2">
+            <div calss="box-line-footer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Fuga!</p>
+
+            <div calss="box-line-footer"> 
+                <h3>Links úteis</h3>
+                <div calss="links-footer">
+                    <a href="">Blog</a>
+                    <a href="">Sobre</a>
+                    <a href="">Portíflio</a>
+            </div>
+            
+
+            <div calss="box-line-footer"> 
+                <h3>Serviços</h3>
+                <div calss="links-footer">
+                    <a href="">Sites</a>
+                    <a href="">Entreinimento</a>
+                    <a href="">Landing page</a>
+            </div> 
+
+            <div calss="box-line-footer"> 
+                <h3>Suporte</h3>
+                    <div calss="links-footer">
+                    <a href="">Entre em contato</a>
+                    <a href="">Envie um e-mail</a>
+                    <a href="">FAQ</a>
+
+            </div>
+            <div class="box-line-footer">
+                <h3>Siga-me</h3>
+                <div class="btn-redes">
+                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+                    <a href="#"><button><i class="bi bi-tiktok"></i></button></a>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="line-footer3">
+            <p>@2005-2025|Acessibilidade.Audio.Visual</p>
+        </section>
+
+        
+    </div>  
+</footer>
+
+</body>
+</html>
