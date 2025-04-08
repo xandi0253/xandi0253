@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da verificação</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="grafico-container">
+        <canvas id="grafico"></canvas>
+    </div>
+
+    <div class="main-container">
+        <div class="form-container">
+            <h1>Análise dos Seus Gastos</h1>
+            <div class="resumo">
+                <h2>Cartão: **** **** **** <span id="ultimosDigitos"></span></h2>
+                <p>Total de gastos: <span id="totalGastos"></span></p>
+            </div>
+            <button onclick="window.location.href='index.html'">Voltar</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Capturar parâmetros da URL
+        const params = new URLSearchParams(window.location.search);
+        const ultimosDigitos = params.get('cartao');
+        const dadosGrafico = JSON.parse(params.get('dados'));
+
+        // Exibir últimos dígitos do cartão
+        document.getElementById('ultimosDigitos').textContent = ultimosDigitos;
+
+        // Calcular e exibir total de gastos
+        const totalGastos = dadosGrafico.datasets[0].data.reduce((a, b) => a + b, 0);
+        const totalGastosFormatado = totalGastos.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        document.getElementById('totalGastos').textContent = totalGastosFormatado;
+
+        // Criar o gráfico
+        const ctx = document.getElementById('grafico').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: dadosGrafico,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#ffffff' }
+                    },
+                    x: {
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#ffffff' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#ffffff' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+    
+    

@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.imagem-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagem-container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.imagem-container img:hover {
+    transform: scale(1.02);
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+#br {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}  
+
+h2 {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.resumo {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.resumo h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.resumo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resumo li {
+    color: #b0b0b0;
+    padding: 8px 0;
+    border-bottom: 1px solid #404040;
+    text-align: center;
+}
+
+.resumo li:last-child {
+    border-bottom: none;
+}
+
+.grafico-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafico-container canvas {
+    width: 90% !important;
+    height: 90% !important;
+}
