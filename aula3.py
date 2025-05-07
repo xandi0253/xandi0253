@@ -82,7 +82,7 @@ Agora caso estiver sem parenteses, a regra não será respeitada, é sendo assim
     
 '''
 
-#Subtração: - (sinal usaod para Subtração)
+#Subtração: - (sinal usado para Subtração)
 '''Subtrai um valor de outro
    ex: 10 - 4 = 6
    Usando a Programação:
@@ -91,7 +91,7 @@ Agora caso estiver sem parenteses, a regra não será respeitada, é sendo assim
    
 '''
 
-#Multiplicação: * (sinal usaod para Multiplicação)
+#Multiplicação: * (sinal usado para Multiplicação)
 '''Multiplica dois valores
    ex: 2 * 5 = 10
    Usando a Programação:
@@ -99,7 +99,7 @@ Agora caso estiver sem parenteses, a regra não será respeitada, é sendo assim
    
 '''
 
-#Divisão: / (sinal usaod para Divisão)
+#Divisão: / (sinal usado para Divisão)
 '''Divide um valor por outro
    ex: 15 / 3 = 5
    Usando a Programação:
@@ -107,7 +107,7 @@ Agora caso estiver sem parenteses, a regra não será respeitada, é sendo assim
    
 '''
 
-#Resto da Divisão (Módulo): % (sinal usaod para Resto da Divisão)
+#Resto da Divisão (Módulo): % (sinal usado para Resto da Divisão)
 '''Retorna o resto da divisão
    ex: 7 % 2 = o resto da divisão é 1
    Usando a Programação:
@@ -115,7 +115,7 @@ Agora caso estiver sem parenteses, a regra não será respeitada, é sendo assim
    
 '''
 
-#Exponenciação: ** (sinal usaod para Exponenciação)
+#Exponenciação: ** (sinal usado para Exponenciação)
 '''Eleva um valor a uma potência(expoente)
    ex: 2 ** 3 = 8 (2 elevado á terceira potência) ou 2^3 = 8.
    Pode também achar a raiz de um determina número
