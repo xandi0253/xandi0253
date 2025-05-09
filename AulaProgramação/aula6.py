@@ -7,7 +7,7 @@ else:
     print("Fique em Casa!!!")
 
 
-int a = 5
+'''int a = 5
 int b = 5
 
 
@@ -17,4 +17,4 @@ a < b  False
 a == b True
 a != b False
 b != a + 1 True
-a * 2 >= b True
+a * 2 >= b True'''
