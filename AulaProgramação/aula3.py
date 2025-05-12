@@ -1,6 +1,6 @@
 # Comando de entrada de dados via terminal input()
 # Comando de saída de dados via terminal print()
-nome_recebido: str = ""
+nome_recebido: str = "admin@2025"
 nome_recebido = input("Digite a senha:")
 print("Senha concluida com sucesso:", nome_recebido)
 

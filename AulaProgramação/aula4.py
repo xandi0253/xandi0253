@@ -1,3 +1,4 @@
+
 print("======= CALCULADORA PROZ =======")
 
 n1: int = 0 #pode ser também  int(input("Digite o primeiro número: "))

@@ -1,7 +1,7 @@
 '''faça um programa que leia do usuario o valor da quantidade de 
 * calorias consumidas por dia.
 o programa deve verificar se a quantidade de claorias se encontra
-*na faixa de segurança - entre 1200 e 1900 cal.(incluindo amos) por dia
+*na faixa de segurança - entre 1200 e 1900 cal.(incluindo ambos) por dia
 * o programa deve exibir como saida uma das duas informações:
 * - ou exibe "dentro da faixa",
 para qtd. de calorias entre 1200 e 1900.
