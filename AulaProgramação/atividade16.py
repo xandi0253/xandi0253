@@ -26,23 +26,49 @@ calca: float = 180
 vestido: float = 350
 meia: float = 7.50
 cod: str = ""
+quantidade: int = 0
 
-cod: str = str(input("Digite o código do Produto: 100 - Camisa , 101 - Saia, 220 - Calça, 103 - Vestido, 104 - Meia:", ))
+
+
+cod: str = str(input("Digite o código do Produto: 100 - Camisa , 101 - Saia, 101- Calça, 103 - Vestido, 104 - Meia:", ))
+
 
 match cod:
     case "100":
-        print("camisa é R$", camisa )
+        quantidade: int = int(input("informe a quantidade do produto:"))
+        preco = camisa * quantidade
+        print(f"O Valor de {quantidade} camisa(s) é R${preco}")
     
     case "101":
-        print("Saia é R$", saia)
+        quantidade: int = int(input("informe a quantidade do produto:"))
+        preco = saia * quantidade
+        print(f"O Valor de {quantidade} camisa(s) é R${preco}")
+       
     
     case "102":
-        print("Calça é R$", calca)
+        quantidade: int = int(input("informe a quantidade do produto:"))
+        preco = calca * quantidade
+        print(f"O Valor de {quantidade} camisa(s) é R${preco}")
     
     case "103":
-        print("Vestido é R$", vestido)
+        quantidade: int = int(input("informe a quantidade do produto:"))
+        preco = vestido * quantidade
+        print(f"O Valor de {quantidade} camisa(s) é R${preco}")
     
     case "104":
-        print("Meia é R$", meia)
+        quantidade: int = int(input("informe a quantidade do produto:"))
+        preco = meia * quantidade
+        print(f"O Valor de {quantidade} camisa(s) é R${preco}") # (OUTRO JEITO DE FAZER) print("A quantidade de meia é:",quantidade,"!","O Valor do produto é: R$", preco)
+
+    case _:
+        print("Produto não encontrado")
+
+if preco >= 500:
+   desconto: float = (preco * 0.10)
+   preco = preco - desconto
+   print("Seu valor com Desconto é: R$", preco)
+
+
+
     
 
