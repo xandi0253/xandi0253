@@ -11,7 +11,7 @@ match opcao:
     case "C":
         raio: float = float(input("Informe o raio:",))
         area = pi * (raio ** 2)
-        print(f"A área do circul é: {area} cm")
+        print(f"A área do circulo é: {area} cm")
     
     case "R":
         base: float = float(input("Informe à base:",))
