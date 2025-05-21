@@ -11,3 +11,13 @@ elif num2 > num3:
     print(num2)
 elif num3 > num1:
     print(num3)
+
+
+"""Questão de prova(cursinhos)
+
+aux: int = 0
+contador: int = 0
+
+while contador < 3:
+    num: int = int(input("Informe o numero: "))
+    """

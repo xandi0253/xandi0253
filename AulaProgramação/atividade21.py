@@ -28,3 +28,19 @@ while num1 != 0:
 print("A soma dos números positivo digitados é:", soma)
 
 print()
+
+
+'''num1: int = 0
+total: int = 0
+while True :
+    num1 = int(input("Digite um numero: "))
+    if num1 < 0:
+    break
+    total = total + num1
+    print("a soma total foi: " total)'''
+
+"""pessoas = []
+while "pedro" not in pessoas:
+    nome = input ("qual é o seu nome?"). lower()
+    pessoas.append(nome)
+print(pessoas)"""
