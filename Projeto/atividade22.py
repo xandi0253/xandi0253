@@ -1,0 +1,13 @@
+"""SENHA CORRETA: CRIE UM PROGRAMA QUE PEÇA AO USUÁRIO PARA INSERIR UMA SENHA.
+ ENQUANTO A SENHA DIGITADA FOR INCORRETA,
+ O PROGRAMA DEVE CONTINUAR PEDINDO A 
+SENHA, USANDO WHILE."""
+
+senha: str = "admin@2025"
+
+
+senha: str = input("Digite uma Senha:", )
+while senha != "admin@2025":
+   print("DIGITE UMA SENHA CARALHO", )
+
+
