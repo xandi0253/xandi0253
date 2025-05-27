@@ -1,15 +1,12 @@
-"""CRIE UM PROGRAMA QUE CONTENHA UMA LISTA DE FRUTAS COM 10 ELEMENTOS.
-PERMITA AO USUÁRIO VERFICAR SE EXISTE UMA FRUTA NA LISTA OU NÃO."""
+"""Cria um programa que receba uma palavra e uma letra.
+Conte quantas vezes a letra digitada aparece na palavra"""
 
+palavra: str = input("Digite uma palavra:",)
+letra_: str = input("Digite uma letra:",)
+total: int = 0
 
-lista_frutas: str = "banana", "laranja", "maçã", "abacate", "perâ", "morango", "kiwi","ameixa","melâncica","abacaxi"
-
-lista_frutas = ["banana", "laranja", "maçã", "abacate", "perâ", "morango", "kiwi","ameixa","melâncica","abacaxi"]
-
-for frutas in lista_frutas:
-    print(frutas)
-frutas = input("digite uma fruta:",)
-if frutas == lista_frutas:
-    print("Fruta encontrada:",)
-else:
-    print("Fruta não encontrada.",frutas)
+for letra in palavra:
+    print("A letra atual:", letra)
+    if letra == letra_:
+        total = total + 1
+print(f" O total de {letra_} na palavra {palavra} é {total}")

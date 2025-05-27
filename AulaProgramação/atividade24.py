@@ -3,8 +3,8 @@ num1 = int(input("Digite um número:",))
 multiplicador = 1
 
 while multiplicador <= 10:
-    resultado = num1 + multiplicador
-    print(f"{num1} + {multiplicador} = {resultado}")
+    resultado = num1 * multiplicador
+    print(f"{num1} X {multiplicador} = {resultado}")
     multiplicador += 1
     
     
