@@ -38,8 +38,9 @@ while True:
                        \t \n 2: Exibir Tarefas Cadastradas
                        \t \n 3: Tarefas em Ordem Alfabética
                        \t \n 4: Remover Tarefas
-                       \t \n 5: Atualizar Lista de Tarefas.
-                       \t \n 6: Encerra a Lista de Tarefas.\n \n''')
+                       \t \n 5: Atualizar Tarefas
+                       \t \n 6: Limpar Lista de Tarefas
+                       \t \n 7: Encerra a Lista de Tarefas.\n \n''')
 
     match opcao: 
         case "1":
@@ -52,10 +53,10 @@ while True:
                 print(inserir_tarefas)
             print("\n")
         case "3":
-            print("======== LISTA EM ORDEM ALFABÉTICA ========",)
+            print("======== TAREFAS EM ORDEM ALFABÉTICA ========",)
+            lista_tarefas.sort()
             for inserir_tarefas in lista_tarefas:
-                lista_tarefas.sort()
-                print(lista_tarefas)
+                print(inserir_tarefas)
             print("\n")
         case "4":
             print("======== EXIBIR TAREFAS CADASTRADAS ========",)
@@ -67,9 +68,20 @@ while True:
                 print("Tarefa não Encontrada.",)
             print("\n")
         case "5":
+            print("======== ATUALIZAR TAREFAS CADASTRADAS ========",)
+            atualizar: str = input("Atualizar - Informe a Tarefa que Deseja Atualizar:",)
+            if atualizar in lista_tarefas:
+                nova_tarefa: str = input("Informe a Nova Tarefa:",)
+                index = lista_tarefas.index(atualizar)
+                lista_tarefas[index] = nova_tarefa
+                print("\n")
+            else:
+                print("Tarefa não Encontrada. ",)                                                                                
+
+        case "6":
             lista_tarefas.clear()
             print("\n")
-        case "6":
+        case "7":
             print("==================================== LISTA DE TAREFAS ENCERRADO! =================================== \n \n")
             break
 
