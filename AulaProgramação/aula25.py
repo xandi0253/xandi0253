@@ -72,9 +72,9 @@ def retangulo ():
 
 def circulo ():
     print("\n\n============== Círculo: ==============")
-    pi = 3.14
+    PI: float = 3.14
     raio: float = float(input("Informe o raio:",))
-    area = pi * (raio ** 2)
+    area = PI * (raio ** 2)
     print(f"A área do circulo é: {area} cm\n\n")
 
 def forma_geometricas():
