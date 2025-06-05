@@ -47,4 +47,15 @@ Crie um programa que contém uma função que receba o número de horas
 trabalhadas no mês, através de um parametro e exibe o salário bruto.'''
 
 
-hora_paga = 45.90
+def analista_sistemas (horas_trabalhadas):
+    salario_bruto: float = horas_trabalhadas * 45.90
+    print(f"No total foram feitas {horas_trabalhadas} horas no mês, Salário Bruto {salario_bruto}")
+    horas_trabalhadas: float = float(input("Digite quantas horas trabalhadas foram feitas:",))
+
+    if horas_trabalhadas <= 220:
+    
+    
+    else:
+       print("Horas não permitida")
+
+    analista_sistemas(horas_trabalhadas)
