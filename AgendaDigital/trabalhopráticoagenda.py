@@ -36,63 +36,135 @@ if senha == "proz@2025":
     print("\n        Bem vindo a Agenda Digital!!!\n        ")
 else:
     print("\n        Senha inválida!!!     \n ")
-    
+
+agenda = {}
+
+def adicionar():
+    nome: str = input("Qual o Nome do Contato: ")
+    telefone: int = int(input("Qual o Telefone do Contato: "))
+    e_mail: int = input("Qual o E-mail do Contato: ")
+    cidade: str = input("Qual a Cidade do Contato: ")
+    agenda[nome] = telefone 
+    agenda[e_mail] = e_mail
+    agenda[cidade] = cidade
+    print("Contato Adicionado Com Sucesso! ")
+
+def exibir():
+    if  agenda:
+        print("Lista de Contatos: ")
+    for (nome), (telefone), (e_mail), (cidade) in agenda.items():
+        print(f"Nome: {nome}")
+        print(f"Telefone: {telefone}")
+        print(f"E-mail: {e_mail}")
+        print(f"Cidade: {cidade}")
+        print("-"*40)
+    else:
+        print("Contato Não Encontrado!!!")
+
+def procurar():
+    nome: str = input("Qual o Contato que Deseja:")
+    if nome in agenda:
+        print("-"*40)
+        print(f"Nome: {nome}")
+        print(f"Telefone: {agenda[nome]}")
+        print(f"E-mail: {agenda[nome]}")
+        print(f"Cidade: {agenda[nome]}")
+    else:
+        print("Contato Não Encontrado")
+    print("-"*40)
+
+def deletar():
+    nome = input("Qual o Contato que Deseja Deletar: ")
+    if nome in agenda:
+        del agenda[nome]
+        print("-"*40)
+        print("Contato Deletado Com Sucesso! ")
+        print("-"*40)
 
 def menu():
     print("\n=== ESCOLHA UMA DAS OPÇÕES: ===")
-    print("1. Digitar um Nome")
-    print("2. Digitar um Número de Contato")
-    print("3. Digitar um E-mail")
-    print("4. Digitar sua Cidade")
-    print("5. Exibir Os Dados da Agenda")
-    print("6. Remover um Contato")
-    print("7. Sair")
+    print("1. Adiciona Seus Dados do Contato:")
+    print("2. Exibir Os Dados da Agenda Digital")
+    print("3. Procurar Por Contato")
+    print("4. Deletar um Contato")
+    print("5. Sair")
 
+def sair_da_agenda():
+    print("1. Sim")
+    print("2. Não")
 
-while True:
-    menu()
-    
-    opcao = []
-    escolha: int = input("Escolha uma Das opções Desejadas: ")
-    if escolha == "1":
-        escolha: int = input("Digita um Nome: ")
-        opcao.append(escolha)
-    print("\n")
-    
-    if escolha == "2":
-        escolha: int = int(input("Digitar um Número de contato: "))
-    print("\n")
-
-    if escolha == "3":
-        escolha: int = input("Digita um E-mail: ")
-    print("\n")
-    
-    if escolha == "4":
-        escolha: str = input("Digite uma Cidade: ")
-    print("\n")
-
-    if escolha == "5":
-        for escolha in opcao:
-            print(escolha)
-    print("\n")
+def repet():
+    while True:
+        menu()
+        a = input("Escolha uma Das opções Desejadas: ")
         
-    if escolha == "6":
-        escolha: str = input("Remover um Contato: ")
-        opcao.remove(escolha)
-    print("\n")
+        if a == "1":
+            adicionar()
+            sair_da_agenda()
+            print("\n")
+            b = input("Tem Algo Mais que Posso Ajudar:")
+            if b == "1":
+                repet()
+                print("\n")
+            elif b == "2":
+                print("Até Logo Mais")
+            break
+                
+        
+        if a == "2":
+            exibir()
+            sair_da_agenda()
+            print("\n")
+            b = input("Tem Algo Mais que Posso Ajudar:")
+            if b == "1":
+                repet()
+                print("\n")
+            elif b == "2":
+                print("Até Logo Mais")
+            break
+        
 
-    if escolha == "7":
-        print("\n====================             < AGENDA FECHADA >          ====================\n")
-        break
-    else:
-        print("Não existe esta Opção!!!")
+             
+        if a == "3":
+            procurar()
+            sair_da_agenda()
+            print("\n")
+            b = input("Tem Algo Mais que Posso Ajudar:")
+            if b == "1":
+                repet()
+                print("\n")
+            elif b == "2":
+                print("Até Logo Mais")
+            break
+        
+
+        if a == "4":
+            deletar()
+            sair_da_agenda()
+            print("\n")
+            b = input("Tem Algo Mais que Posso Ajudar:")
+            if b == "1":
+                repet()
+                print("\n")
+            elif b == "2":
+                print("Até Logo Mais")
+            break
+
+
+        if a == "5":
+            print("\n====================             < AGENDA FECHADA >          ====================\n")
+            break
+        else:
+            print("Não existe esta Opção!!!")
+        
+
+           
+
+        
+
+repet()
 
 
 
-
-
-
-
-    menu()
 
 
