@@ -28,66 +28,76 @@ O acesso ao sistema requer que o usuário insira a senha: proz@2025.
 Encerramento do Programa
 O sistema permanecerá em execução até que o usuário digite "X" para encerrá-lo.'''
 
+import os
+senha = "proz@2025"
+arquivo = "contatos.tx"
 
 print("\n==================  AGENDA DE CONTATO DIGITAL  ==================\n\n")
-senha: int = "proz@2025"
-senha: int = (input("Digite sua Senha Para Abrir sua Agenda Digital: "))
-if senha == "proz@2025":
-    print("\n        Bem vindo a Agenda Digital!!!\n        ")
-else:
-    print("\n        Senha inválida!!!     \n ")
 
-agenda = {}
+def palavra_chave():
+    senhas: int = (input("Digite sua Senha Para Abrir sua Agenda Digital: "))
+    if senhas == senha:
+        print("\n        Bem vindo a Agenda Digital!!!\n        ")
+        return True
+    else:
+        print("\n        Senha inválida!!!     \n ")
+        return False
+
+
 
 def adicionar():
+    print("         \n === DADOS DO CONTATO ===\n       ")
     nome: str = input("Qual o Nome do Contato: ")
     telefone: int = int(input("Qual o Telefone do Contato: "))
     e_mail: int = input("Qual o E-mail do Contato: ")
     cidade: str = input("Qual a Cidade do Contato: ")
-    agenda[nome] = telefone 
-    agenda[e_mail] = e_mail
-    agenda[cidade] = cidade
-    print("Contato Adicionado Com Sucesso! ")
+    print("-"*30)
+   
+    with open(arquivo, "a") as f:
+        f.write(f"{nome};{telefone};{e_mail};{cidade}\n")
+    print("\n=== Contato Adicionado Com Sucesso! ===\n ")
+    
 
-def exibir():
-    if  agenda:
-        print("Lista de Contatos: ")
-    for (nome), (telefone), (e_mail), (cidade) in agenda.items():
-        print(f"Nome: {nome}")
-        print(f"Telefone: {telefone}")
-        print(f"E-mail: {e_mail}")
-        print(f"Cidade: {cidade}")
-        print("-"*40)
+def procurar_contatos():
+    if os.path.exists(arquivo):
+        with open(arquivo, "r") as f:
+            contatos = f.readlines()
+            if contatos:
+                    print("\n                   === LISTA DE CONTATOS ===                ")
+                    for lista, contato_a in enumerate(contatos, start=1):
+                        nome, telefone, e_mail, cidade = contato_a.strip().split(";")
+                        print(f"\n{lista}. Nome: {nome}, Telefone: {telefone}, E-mail: {e_mail}, Cidade: {cidade}\n")
+                        print("-"*70)
+            else:
+                print("Contato não Encontrado!")
     else:
-        print("Contato Não Encontrado!!!")
-
-def procurar():
-    nome: str = input("Qual o Contato que Deseja:")
-    if nome in agenda:
-        print("-"*40)
-        print(f"Nome: {nome}")
-        print(f"Telefone: {agenda[nome]}")
-        print(f"E-mail: {agenda[nome]}")
-        print(f"Cidade: {agenda[nome]}")
-    else:
-        print("Contato Não Encontrado")
-    print("-"*40)
-
+        print("Arquivo de Contato Inexistente.")
+        
 def deletar():
-    nome = input("Qual o Contato que Deseja Deletar: ")
-    if nome in agenda:
-        del agenda[nome]
-        print("-"*40)
-        print("Contato Deletado Com Sucesso! ")
-        print("-"*40)
+   
+    procurar_contatos()
+    print("\n               === DELETAR UM CONTATO ===           ")
+    numero: int= int (input("\nDigite o Número que Deseja Deletar: "))
+    with open(arquivo, "r") as f:
+        contatos = f.readlines()
+    if 0 < numero <= len(contatos) :
+        contatos.pop(numero - 1)
+        with open(arquivo, "w") as f:
+            f.writelines(contatos)
+        print("-"*30)
+        print("Contato Deletado com Sucesso!")
+        print("-"*30)
+    else:
+        print("-"*30)
+        print("Número Inválido.")
+        print("-"*30)
 
 def menu():
-    print("\n=== ESCOLHA UMA DAS OPÇÕES: ===")
-    print("1. Adiciona Seus Dados do Contato:")
-    print("2. Exibir Os Dados da Agenda Digital")
-    print("3. Procurar Por Contato")
-    print("4. Deletar um Contato")
-    print("5. Sair")
+    print("\n=== ESCOLHA UMA DAS OPÇÕES: ===\n")
+    print("1. Adiciona Seus Dados do Contato")
+    print("2. Procurar Contatos ")
+    print("3. Deletar um Contato ")
+    print("5. Sair ")
 
 def sair_da_agenda():
     print("1. Sim")
@@ -102,20 +112,7 @@ def repet():
             adicionar()
             sair_da_agenda()
             print("\n")
-            b = input("Tem Algo Mais que Posso Ajudar:")
-            if b == "1":
-                repet()
-                print("\n")
-            elif b == "2":
-                print("Até Logo Mais")
-            break
-                
-        
-        if a == "2":
-            exibir()
-            sair_da_agenda()
-            print("\n")
-            b = input("Tem Algo Mais que Posso Ajudar:")
+            b = input("Tem Algo Mais que Posso Ajudar: ")
             if b == "1":
                 repet()
                 print("\n")
@@ -125,11 +122,11 @@ def repet():
         
 
              
-        if a == "3":
-            procurar()
+        elif a == "2":
+            procurar_contatos()
             sair_da_agenda()
             print("\n")
-            b = input("Tem Algo Mais que Posso Ajudar:")
+            b = input("Tem Algo Mais que Posso Ajudar: ")
             if b == "1":
                 repet()
                 print("\n")
@@ -138,11 +135,11 @@ def repet():
             break
         
 
-        if a == "4":
+        elif a == "3":
             deletar()
             sair_da_agenda()
             print("\n")
-            b = input("Tem Algo Mais que Posso Ajudar:")
+            b = input("Tem Algo Mais que Posso Ajudar: ")
             if b == "1":
                 repet()
                 print("\n")
@@ -151,7 +148,7 @@ def repet():
             break
 
 
-        if a == "5":
+        elif a == "4":
             print("\n====================             < AGENDA FECHADA >          ====================\n")
             break
         else:
@@ -161,8 +158,8 @@ def repet():
            
 
         
-
-repet()
+if palavra_chave():
+    repet()
 
 
 
